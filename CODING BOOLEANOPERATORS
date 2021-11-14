@@ -1,0 +1,27 @@
+package selfprogramming;
+
+import java.util.Scanner;
+
+public class Booleancombine {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner (System.in);
+		int age;
+		
+		System.out.println("Enter your age :");
+		age = input.nextInt();
+		
+		if ((age>=25) && (age<=50))
+		{
+			System.out.println("You are qualified to apply");
+			
+		}
+		else
+		{
+			System.out.println("You are NOT qualified to apply");
+		}
+
+	}
+
+}
