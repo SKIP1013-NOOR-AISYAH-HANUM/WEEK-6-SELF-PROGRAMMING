@@ -1,0 +1,32 @@
+package selfprogramming;
+
+import java.util.Scanner;
+
+
+public class Multipleselection {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		
+		int usage;
+		
+		System.out.print("Enter your phone battery percentage :");
+		usage = input.nextInt();
+		
+		if (usage>=80)
+		{
+			System.out.println("You can play your phone");
+		
+		}
+		else if (usage>=50)
+		{	
+			System.out.println("Alert of draining battery");
+		}
+		else
+		{		
+			System.out.println("Please charge your phone ASAp");
+		}
+	}
+
+}
