@@ -1,0 +1,26 @@
+package selfprogramming;
+
+import java.util.Scanner;
+
+public class amountbalance {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		double amount;
+		double balance=1000;
+		
+		// Withdrawal amount of more that RM1000.00 is not allowed.
+		
+		System.out.println("Enter the amount :");
+		amount = input.nextDouble();
+		
+		if ((amount<=1000.0) && (amount<=balance ))
+		{
+			balance = balance - amount;
+			System.out.println("Acct new balance = "+balance);
+		}
+
+	}
+
+}
