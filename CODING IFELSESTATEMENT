@@ -1,0 +1,32 @@
+package selfprogramming;
+
+import java.util.Scanner;
+
+public class ifelsestatement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		
+		double amount;
+		double balance=300;
+		double OVERDRAFT_PENALTY=700;
+		
+		System.out.println("Enter the amount :");
+		amount = input.nextDouble();
+		
+		if (amount<=balance)
+		{
+			balance = balance - amount;
+			System.out.println("Acct new balance = "+balance);
+		}
+		else
+		{
+			balance = balance - OVERDRAFT_PENALTY;
+		    System.out.println("TRANSACTION NOT ALLOWED");
+		}
+		
+
+	}
+
+}
